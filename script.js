@@ -6,7 +6,8 @@ var uppercaseArray = ["A","B","C","D"];
 var symbolArray =["!","@","#","$"]
 var allDigits = [...lowercaseArray, ...numberArray, ...uppercaseArray, ...symbolArray]
 
-function generatePassword() {
+function generatePassword() 
+{
   var CharNum= window.prompt("How many characters do you want?")
   var uppercase = window.prompt("Do you want Uppercase?");
   var lowercase = window.prompt("Do you want Lowercase?");
@@ -16,7 +17,7 @@ function generatePassword() {
 
   if (uppercase === "yes" && lowercase === "yes" && numbers === "yes" && symbols === "yes"){ console.log (allDigits)
   } else { console.log (numberArray)}
-  
+}
   //for(var i=0; i <= CharNum; i++){}
 
 // Write password to the #password input
