@@ -27,7 +27,38 @@ return null
   alert("must select criteria")
 return null
 } 
+var finalPassword =[]
+var potentialChar = []
+var guaranteedChar = []
  
+if (uppercase){
+  potentialChar = potentialChar.concat(uppercaseArray);
+  guaranteedChar.push(getrandomindex(uppercaseArray))
+  
+}
+if (lowercase){
+  potentialChar = potentialChar.concat(lowercaseArray);
+ guaranteedChar.push(getrandomindex(lowercaseArray))
+}
+if (numbers){
+ potentialChar = potentialChar.concat(numberArray);
+guaranteedChar.push(getrandomindex(numberArray))
+}
+if (symbols){
+ potentialChar = potentialChar.concat(symbolArray);
+guaranteedChar.push(getrandomindex(symbolArray))
+}
+for(var i=0; i <= CharNum; i++){
+  var possibleChar =getrandomindex(potentialChar)
+  finalPassword.push(possibleChar)
+}
+for(i=0; i< guaranteedChar.length; i++){
+  finalPassword[i]=guaranteedChar[i]
+}
+return finalPassword.join("")
+}
+
+
  
 
 // Write password to the #password input
