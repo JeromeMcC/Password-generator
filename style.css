@@ -12,6 +12,7 @@ body,
   padding: 0;
 }
 
+
 body {
   font-family: sans-serif;
   background-color: #051424;
@@ -54,6 +55,25 @@ header {
   min-height: 100px;
 }
 
+.form{
+display: grid;
+grid-template-columns: auto auto;
+row-gap: 5px;
+column-gap: 5px;
+}
+
+label{
+  font-weight: bold;
+}
+
+.charactervalue{
+ display: flex;
+ align-items: center;
+}
+
+.number-input{
+  width: auto;
+}
 .card-footer {
   text-align: center;
 }
