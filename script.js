@@ -58,7 +58,11 @@ for(i=0; i< guaranteedChar.length; i++){
 return finalPassword.join("")
 }
 
-
+function getrandomindex(arr){
+ var random = Math.floor(Math.random() * arr.length)
+var randomEl = arr[random]
+return randomEl
+}
  
 
 // Write password to the #password input
